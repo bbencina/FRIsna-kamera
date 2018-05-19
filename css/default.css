@@ -7,7 +7,6 @@
   grid-template-columns: 50% 50%;
   padding: 10px;
   justify-items: center;
-  height: ;
 }
 
 .title {
@@ -19,21 +18,6 @@
 	font-size: 40px;
 	color: #990000;
 	padding: 0px;
-}
-
-#title_vrsta {
-	float:left;
-}
-
-#title_jedilnica {
-	float: right;
-}
-
-#feed_vrsta {
-	float:left;
-}
-#feed_jedilnica {
-	float: right;
 }
 
 #video {
