@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo test >> /home/pi/nekineki.txt
+/home/pi/ngrok_start.sh > /home/pi/error.txt &
