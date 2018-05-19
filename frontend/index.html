@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
 	<title>FRIšna kamera</title>
 </head>
+
 <body>
-	
+	<img src="http://193.2.178.117:8081/" class="screen">
+	<img src="http://193.2.177.191:8081/" class="screen">
 </body>
+
 </html>
+<script>
+	function refresh(node) {
+		var times = 33; // gap in Milli Seconds;
+
+		(function startRefresh() {
+			var address;
+			if (node.src.indexOf('?') > -1)
+				address = node.src.split('?')[0];
+			else
+				address = node.src;
+			node.src = address + "?time=" + new Date().getTime();
+
+			setTimeout(startRefresh, times);
+		})();
+
+	}
+
+	window.onload = function () {
+		var node = document.getElementById('screen1');
+		refresh(node);
+		var node2 = document.getElementById('screen1');
+		refresh(node2);
+		// you can refresh as many images you want just repeat above steps
+	}
+
+</script>
