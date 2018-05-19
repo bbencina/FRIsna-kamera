@@ -13,33 +13,30 @@
 	float: right;
 }
 
+body {
+	background-image: url(background.jpg)
+}
 header {
-	padding: 10px;
-	border-style: solid;
-	border-width: 2px;
-	border-color: black;
-	background-color: #87CEFA;
-	border-radius: 20px;
-	box-shadow: 5px 5px #888888;
+	padding: 2px;
 }
 
 h1 {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "Courier New", Arial, sans-serif;
 	font-style: oblique;
 	font-weight: bold;
 	font-variant: small-caps;
-	color: inherit;
+	font-size: 55px;
+	color: #990000;
 	text-align: center;
 	vertical-align: top;
-	text-decoration: underline;
 	text-shadow: 3px 3px 3px #555;
 }
 
 img {
-	border-width: 2px;
-	border-style: dashed;
-	border-color: red;
-	padding: 10px;
-	background-color: yellow;
+	border-width: 6px;
+	border-color: #990000;
+	border-style: solid;
+	padding: 0px;
 	border-radius: 20px;
+	background-color: white;
 }
