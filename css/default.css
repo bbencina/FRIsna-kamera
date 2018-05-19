@@ -6,6 +6,24 @@
 	padding: 10px;
 }
 
+.screentitle {
+	width: 48%;
+	font-family: "Courier New", Arial, sans-serif;
+	font-style: oblique;
+	font-weight: bold;
+	font-variant: small-caps;
+	font-size: 40px;
+	color: #990000;
+}
+
+#title_vrsta {
+	float:left;
+}
+
+#title_jedilnica {
+	float: right;
+}
+
 #feed_vrsta {
 	float:left;
 }
