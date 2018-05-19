@@ -32,6 +32,11 @@
 	float: right;
 }
 
+#video {
+	border: 12px solid yellow;
+	height: 590px;
+}
+
 body {
 	background-image: url(background.jpg)
 }
@@ -58,4 +63,9 @@ img {
 	padding: 0px;
 	border-radius: 20px;
 	background-color: white;
+}
+
+ul {
+	border: 12px solid yellow;
+	position: relative;
 }

@@ -1,9 +1,17 @@
 function pageTextGet(url)
 {
+  document.write("smo v pageTextGet!");
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", theUrl, false ); // synchronous request
+    xmlHttp.open( "GET", url, true ); // synchronous request
     xmlHttp.send( null );
-    return xmlHttp.responseText;
+    xmlHttp.onreadystatechange=function() {
+      if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+        var type = request.getResponseHeader("Access-Control-Allow-Origin");
+        if (type.indexOf("text") !== 1){
+          return xmlHttp.responseText;
+        }
+      }
+    }
 }
 
 function makeUrl()
