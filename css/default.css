@@ -3,7 +3,10 @@
 }
 
 .container {
-	padding: 10px;
+	display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  justify-items: center;
 }
 
 .title {
@@ -34,7 +37,7 @@
 
 #video {
 	border: 12px solid yellow;
-	height: 590px;
+	height: 100%;
 }
 
 body {
