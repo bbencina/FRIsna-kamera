@@ -1,5 +1,5 @@
 .screen {
-	width: 48%;
+	width: 95%;
 }
 
 .container {
@@ -7,6 +7,7 @@
   grid-template-columns: auto auto;
   padding: 10px;
   justify-items: center;
+  height: ;
 }
 
 .title {
