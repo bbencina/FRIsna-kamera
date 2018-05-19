@@ -32,7 +32,7 @@ h1 {
 	text-align: center;
 	vertical-align: top;
 	text-decoration: underline;
-
+	text-shadow: 3px 3px 3px #555;
 }
 
 img {
