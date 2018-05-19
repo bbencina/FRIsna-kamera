@@ -1,5 +1,9 @@
 .screen {
 	width: 95%;
+	background-image: url("diff.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-origin: border-box;
 }
 
 .container {
