@@ -1,9 +1,16 @@
 .screen {
-	width: 50%;
+	width: 48%;
 }
 
 .container {
 	padding: 10px;
+}
+
+#feed_vrsta {
+	float:left;
+}
+#feed_jedilnica {
+	float: right;
 }
 
 header {
@@ -12,6 +19,8 @@ header {
 	border-width: 2px;
 	border-color: black;
 	background-color: #87CEFA;
+	border-radius: 20px;
+	box-shadow: 5px 5px #888888;
 }
 
 h1 {
@@ -32,4 +41,5 @@ img {
 	border-color: red;
 	padding: 10px;
 	background-color: yellow;
+	border-radius: 20px;
 }
