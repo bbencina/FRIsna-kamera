@@ -96,8 +96,8 @@ var ulist = document.getElementById("ulist_food");
 
 
 for (var i = 0; i < jedilnik.length; i++) {
-  var food_item = document.createTextNode(jedilnik[i] + ".");
-  var item_holder = document.createElement("li");
+  var food_item = document.createTextNode("> " + jedilnik[i] + ".");
+  var item_holder = document.createElement("div");
   item_holder.appendChild(food_item);
   ulist.appendChild(item_holder);
 }

@@ -10,7 +10,6 @@
 	display: grid;
   grid-template-columns: 50% 50%;
   padding: 10px;
-  justify-items: center;
 }
 
 .title {
@@ -24,20 +23,35 @@
 	padding: 0px;
 }
 
+#ulist_food {
+	columns: 2;
+	background-color: rgb(0, 0, 0, 30%);
+}
+
+#ulist_food div {
+	color: #aa0000;
+	font-size: 3vw;
+	font-family:  "Courier New", Arial, sans-serif;
+	font-style: oblique;
+	font-variant: small-caps;
+}
+
 #video {
 
 	height: 100%;
 }
 
 html {
-	background-image: url(background_nice_bela.jpg);
-	background-repeat: no-repeat;
+	background-image: url(background.jpg);
+/*	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: cover;*/
 }
 
+
+
 header {
-	padding: 2px;
+	padding: 0px;
 }
 
 h1 {
@@ -46,6 +60,7 @@ h1 {
 	font-weight: bold;
 	font-variant: small-caps;
 	font-size: 7vw;
+	margin: 0px;
 	max-height: 8vw;
 	color: #990000;
 	text-align: center;
