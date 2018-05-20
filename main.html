@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<title>FRIšna kamera</title>
+</head>
+
+<body>
+	<header>
+		<h1> FRI jedilnica </h1>
+	</header>
+	<div class="container" id="video">
+		<div class="title" id="title_vrsta"> Vrsta </div>
+		<div class="title" id="title_jedilnica"> Jedilnica </div>
+		<img src="http://193.2.178.117:8081/" class="screen" id="feed_vrsta" alt="">
+		<img src="http://193.2.176.190:8081/" class="screen" id="feed_jedilnica" alt="">
+	</div>
+	<div id="menu">
+		<div class="title" id="title_dnevni_menu"> Dnevni menu </div>
+		<div class="container" id="ulist_food">
+		</div>
+	</div>
+
+	<script src="scripts/hard_menu.js"></script>
+	<!--
+	 <script src="scripts/scrapper.js"></script>
+-->
+
+</body>
+
+</html>
+
+<!--
+<script>
+	function refresh(node) {
+		var times = 33; // gap in Milli Seconds;
+
+		(function startRefresh() {
+			var address;
+			if (node.src.indexOf('?') > -1)
+				address = node.src.split('?')[0];
+			else
+				address = node.src;
+			node.src = address + "?time=" + new Date().getTime();
+
+			setTimeout(startRefresh, times);
+		})();
+
+	}
+
+	window.onload = function () {
+		var node = document.getElementById('screen1');
+		refresh(node);
+		var node2 = document.getElementById('screen1');
+		refresh(node2);
+		// you can refresh as many images you want just repeat above steps
+	}
+
+</script>
+-->
